@@ -11,9 +11,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // CRUD
 
-app.get('/', movies.list);
-app.get('/:movieTitle', movies.find);
-app.post('/', movies.create);
+app.get('/movies', movies.list);
+app.get('/movies/:movieTitle', movies.find);
+app.post('/movies', movies.create);
 // app.put('/:movieTitle', movies.update);
 // app.delete('/:movieTitle', movies.remove);
 

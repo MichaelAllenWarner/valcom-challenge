@@ -10,6 +10,7 @@ const list = (_req, res) => {
     });
 };
 
+// seems to be returning FULL list of movies rather than just one:
 const find = (req, res) => {
   Movie
     .findOne({ title: req.params.movieTitle })
