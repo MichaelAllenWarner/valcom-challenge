@@ -23,7 +23,7 @@ const create = (req, res) => {
   const movie = new Movie({
     title: req.body.title,
     // release_date: req.body.release_date,
-    overview: req.body.description,
+    overview: req.body.overview,
   });
 
   movie
